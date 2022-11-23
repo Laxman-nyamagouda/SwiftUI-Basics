@@ -14,6 +14,7 @@
 		03D240A3292DEBCA00CB2A40 /* SwiftUI_BasicsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D240A2292DEBCA00CB2A40 /* SwiftUI_BasicsTests.swift */; };
 		03D240AD292DEBCA00CB2A40 /* SwiftUI_BasicsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D240AC292DEBCA00CB2A40 /* SwiftUI_BasicsUITests.swift */; };
 		03D240AF292DEBCA00CB2A40 /* SwiftUI_BasicsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D240AE292DEBCA00CB2A40 /* SwiftUI_BasicsUITestsLaunchTests.swift */; };
+		03D240BC292DF23400CB2A40 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D240BB292DF23400CB2A40 /* CircleImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		03D240A8292DEBCA00CB2A40 /* SwiftUI-BasicsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftUI-BasicsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		03D240AC292DEBCA00CB2A40 /* SwiftUI_BasicsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_BasicsUITests.swift; sourceTree = "<group>"; };
 		03D240AE292DEBCA00CB2A40 /* SwiftUI_BasicsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_BasicsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		03D240BB292DF23400CB2A40 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				03D24091292DEBC800CB2A40 /* SwiftUI_BasicsApp.swift */,
 				03D24093292DEBC800CB2A40 /* ContentView.swift */,
+				03D240BB292DF23400CB2A40 /* CircleImage.swift */,
 				03D24095292DEBCA00CB2A40 /* Assets.xcassets */,
 				03D24097292DEBCA00CB2A40 /* Preview Content */,
 			);
@@ -259,6 +262,7 @@
 			files = (
 				03D24094292DEBC800CB2A40 /* ContentView.swift in Sources */,
 				03D24092292DEBC800CB2A40 /* SwiftUI_BasicsApp.swift in Sources */,
+				03D240BC292DF23400CB2A40 /* CircleImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
