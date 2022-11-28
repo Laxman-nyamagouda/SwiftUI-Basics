@@ -1,50 +1,52 @@
 //
-//  ContentView.swift
+//  LandmarkDetail.swift
 //  SwiftUI-Basics
 //
-//  Created by Laxman Nyamagouda on 11/23/22.
+//  Created by Laxman Nyamagouda on 11/27/22.
 //
 
 import SwiftUI
 
-struct ContentView: View {
+struct LandmarkDetail: View {
+    
+    @State var landmark: Landmark
+    
     var body: some View {
-        
         VStack {
-            MapView()
+            MapView(coordinate: landmark.locationCoordinate)
                 .ignoresSafeArea(edges: .top)
                 .frame(height: 300)
             
-            CircleImage()
+            CircleImage(image: landmark.image)
                 .offset(y: -130)
                 .padding(.bottom, -130)
             
             VStack(alignment: .leading) {
-                Text("Apple")
+                Text(landmark.name)
                     .font(.headline)
                 HStack {
-                    Text("Tim Cook")
+                    Text(landmark.park)
                     Spacer()
-                    Text("Cupertino, CA")
+                    Text(landmark.state)
                 }
                 .font(.subheadline)
                 .foregroundColor(.secondary)
                 
                 Divider()
-                Text("About Apple")
-                    .font(.headline)
-                Text("Shop iPhone, Mac, iPad, Apple Watch, AirPods, Apple TV and more.")
-                    .font(.subheadline)
-                    .foregroundColor(.secondary)
+                
+                Text("About \(landmark.name)")
+                    .font(.title2)
+                Text(landmark.description)
             }
-            .padding()
         }
+        .padding()
+        
         Spacer()
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct LandmarkDetail_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        LandmarkDetail(landmark: landmarks[0])
     }
 }
